@@ -16,12 +16,17 @@ public class Main {
         System.out.println("Barber shop management service started, please enter number of seats...\n");
         int seatCount = sc.nextInt();
         while (seatCount < 1) {
+            if (seatCount == -1) {
+                System.out.println("Application terminated");
+                return;
+            }
             System.out.println("Invalid seat count, minimum 1 seat count required...\n");
             seatCount = sc.nextInt();
         }
         barberShop = new BarberShop(seatCount);
         service = new ShopManagementService(barberShop);
         System.out.println("Barber shop init completed, please enter commands...\n");
+        sc.nextLine();
 
         while (sc.hasNextLine()) {
             String command = sc.nextLine();
@@ -33,7 +38,7 @@ public class Main {
             System.out.println();
         }
 
-        System.out.println("Terminating Type Ahead Suggester Application");
+        System.out.println("Terminating barber shop management service");
     }
 
     private static void processCommand(String command) {
