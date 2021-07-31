@@ -13,14 +13,14 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Barber shop management service started, please enter number of seats...\n");
+        System.out.println("Barber shop management service started, please enter number of seats... or Enter -1 to terminate application\n");
         int seatCount = sc.nextInt();
         while (seatCount < 1) {
             if (seatCount == -1) {
                 System.out.println("Application terminated");
                 return;
             }
-            System.out.println("Invalid seat count, minimum 1 seat count required...\n");
+            System.out.println("Invalid seat count, minimum 1 seat count required... or Enter -1 to terminate application\n");
             seatCount = sc.nextInt();
         }
         barberShop = new BarberShop(seatCount);
