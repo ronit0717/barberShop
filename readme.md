@@ -32,7 +32,7 @@ if 	`seats[i] == true` this implies the seat is occupied by a customer, else the
 There are two pointers, `seatPointer` and `barberPointer`.
 
 The *seatPointer* points to the index, where the next customer will be allocated a seat if available.  
-The *barberPointer* points to the index, where the barber next needs to provide his/her service.  
+The *barberPointer* points to the index, where the barber next needs to provide his/her com.rccode.service.  
 
 Both *seatPointer* and *barberPointer* are initialised at position 0.  
 The pointers move from left to right in the *seats* array, in a circular manner. Once the pointer reaches the end, it starts again from the front (at index 0).  
@@ -71,7 +71,7 @@ else
 
 ## Sample commands and output
 ```
-Barber shop management service started, please enter number of seats... or Enter -1 to terminate application
+Barber shop management com.rccode.service started, please enter number of seats... or Enter -1 to terminate application
 3
 
 Barber shop init completed, please enter commands...
@@ -113,5 +113,5 @@ barber status
 Barber is sleeping
 
 exit
-Terminating barber shop management service
+Terminating barber shop management com.rccode.service
 ```

@@ -1,9 +1,9 @@
-package model;
+package com.rccode.model;
 
 public class BarberShop {
     private boolean[] seats;
-    int seatPointer;
-    int barberPointer;
+    private int seatPointer;
+    private int barberPointer;
 
     public BarberShop(int seatCount) {
         seats = new boolean[seatCount];

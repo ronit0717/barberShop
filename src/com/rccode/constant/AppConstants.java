@@ -1,4 +1,4 @@
-package constant;
+package com.rccode.constant;
 
 public class AppConstants {
 

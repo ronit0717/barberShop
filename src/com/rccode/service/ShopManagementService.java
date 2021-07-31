@@ -1,6 +1,6 @@
-package service;
+package com.rccode.service;
 
-import model.BarberShop;
+import com.rccode.model.BarberShop;
 
 public class ShopManagementService {
 
