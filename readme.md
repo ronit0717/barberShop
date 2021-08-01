@@ -113,5 +113,5 @@ barber status
 Barber is sleeping
 
 exit
-Terminating barber shop management com.rccode.service
+Terminating barber shop management service
 ```
