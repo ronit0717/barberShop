@@ -13,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Barber shop management com.rccode.service started, please enter number of seats... or Enter -1 to terminate application\n");
+        System.out.println("Barber shop management service started, please enter number of seats... or Enter -1 to terminate application\n");
         int seatCount = sc.nextInt();
         while (seatCount < 1) {
             if (seatCount == -1) {
@@ -38,7 +38,7 @@ public class Main {
             System.out.println();
         }
 
-        System.out.println("Terminating barber shop management com.rccode.service");
+        System.out.println("Terminating barber shop management service");
     }
 
     private static void processCommand(String command) {
