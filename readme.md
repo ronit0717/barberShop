@@ -71,7 +71,7 @@ else
 
 ## Sample commands and output
 ```
-Barber shop management com.rccode.service started, please enter number of seats... or Enter -1 to terminate application
+Barber shop management service started, please enter number of seats... or Enter -1 to terminate application
 3
 
 Barber shop init completed, please enter commands...
