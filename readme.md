@@ -48,15 +48,15 @@ else
 **Time complexity:** O(1). 
 
 ### Cut Hair
-if `seats[barberPointer] == true`  
-&nbsp;&nbsp;&nbsp;&nbsp;Then cut hair, ie. mark `seats[barberPointer]=false` and increment barberPointer, ie. `barberPointer++`.   
+if `seats[barberPointer % N] == true`  
+&nbsp;&nbsp;&nbsp;&nbsp;Then cut hair, ie. mark `seats[barberPointer % N]=false` and increment barberPointer, ie. `barberPointer++`.   
 else  
 &nbsp;&nbsp;&nbsp;&nbsp;print seat is empty, hence no hair cut.  
 
 **Time complexity:** O(1). 
 
 ### Check Barber Status
-if `barberPointer == seatPointer && seats[barberPoiner] == false`  
+if `barberPointer == seatPointer && seats[barberPoiner % N] == false`  
 &nbsp;&nbsp;&nbsp;&nbsp;then this means no customer is available, barber is in sleep state.    
 else  
 &nbsp;&nbsp;&nbsp;&nbsp;Barber has customer(s) to serve. Barber is in active state.  
